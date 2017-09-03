@@ -1,0 +1,28 @@
+#summary List of LUA functions called by HOI3 exe
+
+= Introduction =
+
+Below list list all LUA functions called by HOI3 executable. Some are well known, others as known as hooks thanks to Lothos annotations. Below list is for Semper Fi.
+
+= Details =
+
+  * `ForeignMinister_OnWar(`[LUAClassReference#CAIAgent CAIAgent]` agent,`[LUAClassReference#CCountryTag CCountryTag]` countryTag1,`[LUAClassReference#CCountryTag CCountryTag]` countryTag2,  `[LUAClassReference#CWar CCWar]`? war )`
+  * `ForeignMinister_EvaluateDecision(`[LUAClassReference#CAIAgent CAIAgent]` agent, `[LUAClassReference#CDecision CDecision]` decision, ??? scope)`
+  * `ForeignMinister_Tick(`[LUAClassReference#CAIForeignMinister CAIForeignMinister]` minister)`
+  * `IntelligenceMinister_Tick(`[LUAClassReference#CAIEspionageMinister CAIEspionageMinister]` minister)`
+  * `PoliticsMinister_Tick(`[LUAClassReference#CAIPoliticsMinister CAIPoliticsMinister]` minister)`
+  * `ProductionMinister_Tick(`[LUAClassReference#CAIProductionMinister CAIProductionMinister]` minister)`
+  * `BalanceProductionSliders(`[LUAClassReference#CAI CAI]` ai, `[LUAClassReference#CCountry CCountry]` ministerCountry, number prioSelection)`
+  * `TechMinister_Tick(`[LUAClassReference#CAITechMinister CAITechMinister]` minister, bool set_sliders, bool set_research)`
+  * `ForeignMinister_ManageTrade(`[LUAClassReference#CAI CAI]` ai, `[LUAClassReference#CCountryTag CCountryTag]` ministerTag)
+  * `DiploScore_OfferTrade(`[LUAClassReference#CAI CAI]` ai, `[LUAClassReference#CCountryTag CCountryTag]` actor, `[LUAClassReference#CCountryTag CCountryTag]` recipient, `[LUAClassReference#CCountryTag CCountryTag]` observer, `[LUAClassReference#CTradeAction CTradeAction]` voTradeAction, table voTradedFrom, table voTradedTo)`
+
+===DiploScore_OfferTrade note===
+Both voTradedFrom and voTradedTo parameter seems to be either dictionaries or object with following keys/properties :
+  * voTradedTo.vMoney
+  * voTradedTo.vMetal
+  * voTradedTo.vEnergy
+  * voTradedTo.vRareMaterials
+  * voTradedTo.vCrudeOil
+  * voTradedTo.vSupplies
+  * voTradedTo.vFuel
