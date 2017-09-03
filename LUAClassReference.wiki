@@ -787,7 +787,7 @@ There is no constructor for this object, use API reference in order to find a me
 <tr><td><font face="monospace">[#CFixedPoint CFixedPoint]</font></td><td><font face="monospace">`GetEscortBuildTime`()</font></td><td></td></tr>
 <tr><td><font face="monospace">number</font></td><td><font face="monospace">`GetEscorts`()</font></td><td></td></tr>
 <tr><td><font face="monospace">[#CFaction CFaction]</font></td><td><font face="monospace">`GetFaction`()</font></td><td></td></tr>
-<tr><td><font face="monospace">unknown</font></td><td><font face="monospace">`GetFlags`(unknown)</font></td><td></td></tr>
+<tr><td><font face="monospace">[#CFlags CFlags]</font></td><td><font face="monospace">`GetFlags`(unknown)</font></td><td></td></tr>
 <tr><td><font face="monospace">[#CModifier CModifier]</font></td><td><font face="monospace">`GetGlobalModifier`()</font></td><td></td></tr>
 <tr><td><font face="monospace">[#CGovernment CGovernment]</font></td><td><font face="monospace">`GetGovernment`()</font></td><td></td></tr>
 <tr><td><font face="monospace">[#CCountryTag CCountryTag]</font></td><td><font face="monospace">`GetHighestThreat`()</font></td><td></td></tr>
